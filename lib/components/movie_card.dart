@@ -17,6 +17,7 @@ class MovieCard extends StatelessWidget {
       child: OpenContainer(
         openElevation: 0,
         closedElevation: 0,
+        transitionDuration: Duration(milliseconds: 500),
         closedBuilder: (context, action) => buildMovieCard(context),
         openBuilder: (context, action) => DetailsPage(movieModel: movieModel),
       ),
